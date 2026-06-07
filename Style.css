@@ -1,5 +1,25 @@
+
 body{
 
 background-color: #FFFFFF;
+}
+
+.navbar-nav .nav-link{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
 
 }
